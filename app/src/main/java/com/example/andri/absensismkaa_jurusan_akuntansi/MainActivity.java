@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.andri.absensismkaa_jurusan_akuntansi.homeview.HomeActivity;
+import com.example.andri.absensismkaa_jurusan_akuntansi.listview.JadwalActivity;
 
 public class MainActivity extends AppCompatActivity {
     boolean doubleBackToExitPressedOnce = false;
@@ -68,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
                 //TODO about apps
                 Intent i = new Intent(this, AboutActivity.class);
                 startActivity(i);
+                break;
+            case R.id.jadwal:
+                //TODO about apps
+                Intent in = new Intent(this, JadwalActivity.class);
+                startActivity(in);
                 break;
             case R.id.exit:
                 //TODO exit apps

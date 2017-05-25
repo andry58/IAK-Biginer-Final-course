@@ -1,32 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.andri.absensismkaa_jurusan_akuntansi.homeview.HomeActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.andri.absensismkaa_jurusan_akuntansi.OneFragment">
 
-    <ImageView
-        android:id="@+id/mIVbener"
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:src="@drawable/smkaa"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
+    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:id="@+id/mmLinierlayout"
-        android:layout_below="@+id/mIVbener"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="@dimen/text_8">
+        android:orientation="vertical">
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:onClick="onClickabsen"
             app:cardCornerRadius="4dp">
 
             <LinearLayout
@@ -38,61 +26,13 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    app:srcCompat="@drawable/book" />
+                    app:srcCompat="@drawable/quill" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/text1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="@dimen/text_14"
-                        android:layout_marginLeft="8dp"
-                        android:text="Absensi Siswa"
-                        android:textColor="#757575"
-                        android:textSize="20dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="@dimen/text_14"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="35dp"
-                        android:text="Jurusan Akuntansi"
-                        android:textColor="#757575"
-                        android:textSize="14dp" />
-
-                </RelativeLayout>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:onClick="onClickjadwal"
-            app:cardCornerRadius="4dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    app:srcCompat="@drawable/book_cover" />
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
                     <TextView
                         android:id="@+id/text2"
                         android:layout_width="wrap_content"
@@ -100,7 +40,7 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="@dimen/text_14"
                         android:layout_marginLeft="8dp"
-                        android:text="Jadwal Pelajaran"
+                        android:text="B.Indonesia"
                         android:textColor="#757575"
                         android:textSize="20dp" />
 
@@ -108,21 +48,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="35dp"
                         android:layout_marginBottom="@dimen/text_14"
                         android:layout_marginLeft="8dp"
-                        android:text="Jurusan Akuntansi "
+                        android:layout_marginTop="35dp"
+                        android:text="07:00-08:30 WIB / Kelas 11 ,Kasih Sutarmi"
                         android:textColor="#757575"
                         android:textSize="14dp" />
 
                 </RelativeLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:onClick="onClickabout"
             app:cardCornerRadius="4dp">
 
             <LinearLayout
@@ -147,7 +87,7 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="@dimen/text_14"
                         android:layout_marginLeft="8dp"
-                        android:text="About"
+                        android:text="B. Inggris"
                         android:textColor="#757575"
                         android:textSize="20dp" />
 
@@ -158,7 +98,98 @@
                         android:layout_marginTop="35dp"
                         android:layout_marginBottom="@dimen/text_14"
                         android:layout_marginLeft="8dp"
-                        android:text="SMK AA"
+                        android:text="08:30-10:00 WIB/Kelas 11 ,Dita Sujana"
+                        android:textColor="#757575"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/quill" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/text_14"
+                        android:layout_marginLeft="8dp"
+                        android:text="Istiahat"
+                        android:textColor="#757575"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="@dimen/text_14"
+                        android:layout_marginLeft="8dp"
+                        android:text="10:00-10:45 WIB"
+                        android:textColor="#757575"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/quill" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/text_20"
+                        android:layout_marginLeft="8dp"
+                        android:text="Surat Pemberitahuan Pajak"
+                        android:textColor="#757575"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="@dimen/text_14"
+                        android:layout_marginLeft="8dp"
+                        android:text="10:45-12:00 WIB/Kelas 11,Fajar Firmansyah"
                         android:textColor="#757575"
                         android:textSize="14dp" />
 
@@ -167,4 +198,4 @@
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
-</RelativeLayout>
+</ScrollView>

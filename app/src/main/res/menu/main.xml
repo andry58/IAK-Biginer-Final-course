@@ -4,5 +4,6 @@
 <item android:title="about" android:id="@+id/about">About</item>
 <item android:title="absen" android:id="@+id/absen">Absensi</item>
 <item android:title="exit" android:id="@+id/exit">Exit</item>
+    <item android:title="Jadwal" android:id="@+id/jadwal">Jadwal</item>
 
 </menu>

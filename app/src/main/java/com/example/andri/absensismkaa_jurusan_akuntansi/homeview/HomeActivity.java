@@ -1,6 +1,5 @@
 package com.example.andri.absensismkaa_jurusan_akuntansi.homeview;
 
-import android.app.ListActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
@@ -29,20 +28,20 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-    public void onClickBuku(View view){
+    public void onClickabsen(View view){
         Intent intent = new Intent(this,AbsensiActivity.class);
         startActivity(intent);
 
     }
 
-    public void onClicklab(View view){
-        Intent intent = new Intent(this, JadwalActivity.class);
+    public void onClickjadwal(View view){
+        Intent intent = new Intent(this,JadwalActivity.class);
         startActivity(intent);
     }
 
-    public void onClickoter(View view){
-        Intent intent = new Intent(this, AboutActivity.class);
-        startActivity(intent);
+    public void onClickabout(View view){
+        Intent intent1 = new Intent(this, AboutActivity.class);
+        startActivity(intent1);
     }
 
     @Override
@@ -86,6 +85,12 @@ public class HomeActivity extends AppCompatActivity {
                 Intent i = new Intent(this, AboutActivity.class);
                 startActivity(i);
                 break;
+            case R.id.jadwal:
+                //TODO about apps
+                Intent in = new Intent(this, JadwalActivity.class);
+                startActivity(in);
+                break;
+
             case R.id.exit:
                 //TODO exit apps
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
