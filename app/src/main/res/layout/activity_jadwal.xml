@@ -16,7 +16,7 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="490dp"
-            android:layout_height="97dp"
+            android:layout_height="67dp"
             android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
@@ -24,7 +24,7 @@
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="21dp"
 
             app:tabGravity="center"
             app:tabMode="scrollable"/>
@@ -33,7 +33,7 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="601dp"
+        android:layout_height="680dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
 
 

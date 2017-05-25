@@ -17,6 +17,8 @@ import java.util.List;
 
 public class AbsensiActivity extends AppCompatActivity {
 
+
+
     private RadioGroup radioGroupNb;
     private RadioButton radioGroup;
 
@@ -34,8 +36,7 @@ public class AbsensiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_absensi);
-
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         radioGroupNb= (RadioGroup)
                 findViewById(R.id.radioGroupNb);
@@ -60,7 +61,13 @@ public class AbsensiActivity extends AppCompatActivity {
 
 
     }
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home){
+            onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 
 
